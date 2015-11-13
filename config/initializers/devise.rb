@@ -228,5 +228,10 @@ Devise.setup do |config|
   #   manager.default_strategies(scope: :user).unshift :some_external_strategy
   # end
 
-  config.secret_key = ENV["DEVISE_SECRET_KEY"]
+  #config.secret_key = ENV["DEVISE_SECRET_KEY"]
+  config.secret_key = 'f2c9eb0957d79ef1e8ee3f03f30716b37bda28586812e0e7129d1f927d1c13966d7031ef6457df06bf1a6c2e439fc7cbd6ee30b9c75c306dc5380dae3784bf3b'
+
+
+  #config.secret_key = ENV['DEVISE_SECRET_KEY'] if Rails.env.production?
+
 end
