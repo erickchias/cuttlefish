@@ -36,12 +36,12 @@ module Cuttlefish
     # Cuttlefish specific configuration below here ONLY #
     #####################################################
 
-    config.cuttlefish_domain = ENV["CUTTLEFISH_DOMAIN"] || "cuttlefish.io"
+    config.cuttlefish_domain = ENV["CUTTLEFISH_DOMAIN"] || "cuttlefish.local"
     # TODO Rename the certificate to generic name that doesn't include domain
     config.cuttlefish_domain_cert_chain_file =
-      ENV["CUTTLEFISH_DOMAIN_CERT_CHAIN_FILE"] || "/etc/ssl/cuttlefish.oaf.org.au.pem"
+      ENV["CUTTLEFISH_DOMAIN_CERT_CHAIN_FILE"] || "/etc/ssl/cuttlefish.local.pem"
     config.cuttlefish_domain_private_key_file =
-      ENV["CUTTLEFISH_DOMAIN_PRIVATE_KEY_FILE"] || "/etc/ssl/private/cuttlefish.oaf.org.au.key"
+      ENV["CUTTLEFISH_DOMAIN_PRIVATE_KEY_FILE"] || "/etc/ssl/private/cuttlefish.local.key"
 
     config.postfix_smtp_host = ENV["POSTFIX_SMTP_HOST"] || "localhost"
     config.postfix_smtp_port = ENV["POSTFIX_SMTP_PORT"] ? ENV["POSTFIX_SMTP_PORT"].to_i : 25
