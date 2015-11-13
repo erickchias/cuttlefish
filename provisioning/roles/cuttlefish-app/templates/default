@@ -16,14 +16,14 @@ server {
     expires max;
     add_header Cache-Control public;
   }
-  
+
   root /srv/www/current/public;
   passenger_enabled on;
   passenger_ruby /usr/local/lib/rvm/wrappers/default/ruby;
 
   ssl on;
-  ssl_certificate /etc/ssl/cuttlefish.oaf.org.au.pem;
-  ssl_certificate_key /etc/ssl/private/cuttlefish.oaf.org.au.key;
+  ssl_certificate /etc/ssl/cuttlefish.local.pem;
+  ssl_certificate_key /etc/ssl/private/cuttlefish.local.key;
 
   ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
   ssl_prefer_server_ciphers on;
